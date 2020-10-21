@@ -1,7 +1,19 @@
-@font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter.ttf');
-}
+$body-color: red;
 
-@import 'variables';
-@import 'scaffolding';
+body {
+  color: $body-color;
+}
+// CSS RESET
+@import "config/reset";
+
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+
+// External libraries
+// @import "font-awesome-sprockets";
+// @import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
